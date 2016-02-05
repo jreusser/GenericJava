@@ -1,0 +1,17 @@
+for(var i =1; i<101; i++){
+    var toPrint = "";
+    var isFive = i%5==0;
+    if(isFive){
+        toPrint+="Buzz";
+    }
+    var isThree = i%3==0;
+    if(isThree){
+        toPrint = "Fizz"+toPrint;
+    }
+    
+    if(!isThree &&!isFive){
+        toPrint = i;
+    }
+    
+    console.log(toPrint);
+}
